@@ -29,7 +29,7 @@ export default class ProductsController {
 
     const createProduct = new CreateProductService();
 
-    const product = createProduct.execute({
+    const product = await createProduct.execute({
       name,
       price,
       quantity,
